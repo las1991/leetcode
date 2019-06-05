@@ -1,5 +1,8 @@
 package lengthOfLongestSubstring;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+
 /**
  * @author las
  * @date 19-6-5
@@ -42,5 +45,34 @@ public class LongestSubstringWithoutRepeatingCharacters {
         return false;
     }
 
-    
+
+    public int solution1(String s) {
+        int count = 0;
+        Character[] result = new Character[0];
+        LinkedList<Character> tmp = new LinkedList<>();
+        for (char character : s.toCharArray()) {
+            if (tmp.contains(character)) {
+                if (tmp.size() > count) {
+                    count = tmp.size();
+                    result = tmp.toArray(new Character[0]);
+
+                }
+
+                while (!tmp.isEmpty()) {
+                    if (tmp.removeFirst().equals(character)) break;
+                }
+            }
+            tmp.add(character);
+        }
+        if (tmp.size() > count) {
+            count = tmp.size();
+            result = tmp.toArray(new Character[0]);
+
+        }
+        System.out.println(count + "：" + Arrays.toString(result));
+        return count;
+
+    }
+
+
 }
