@@ -13,3 +13,4 @@
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[Java](./src/medianofTwoSortedArrays/MedianOfTwoSortedArrays.java)|Hard|
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[Java](./src/longestPalindromicSubstring/LongestPalindromicSubstring.java)|Medium|
 |6|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|[Java](./src/zigZagConversion/ZigZagConversion.java)|Medium|
+|7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[Java](./src/reverseInteger/ReverseInteger.java)|Easy|
