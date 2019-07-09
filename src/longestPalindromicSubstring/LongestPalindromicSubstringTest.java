@@ -32,6 +32,12 @@ public class LongestPalindromicSubstringTest {
 
     @Test
     public void test1() {
-        assert "a".equals(longest.longestPalindrome(str3));
+        assert "bab".equals(longest.longestPalindrome1(str1)) || "aba".equals(longest.longestPalindrome1(str1));
+        assert "bb".equals(longest.longestPalindrome1(str2));
+        assert "a".equals(longest.longestPalindrome1(str3));
+        assert "ccc".equals(longest.longestPalindrome1(str4));
+        assert "aba".equals(longest.longestPalindrome1(str5));
+        assert "a".equals(longest.longestPalindrome1(str6));
+        assert "bacab".equals(longest.longestPalindrome1(str7));
     }
 }
