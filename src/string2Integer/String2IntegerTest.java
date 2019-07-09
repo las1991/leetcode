@@ -16,6 +16,7 @@ public class String2IntegerTest {
     String str5 = "-91283472332";
     String str6 = "   +0 123";
     String str7 = "2147483648";
+    String str8 = "- 1";
 
     @Test
     public void myAtoi() {
@@ -26,5 +27,6 @@ public class String2IntegerTest {
         assert -2147483648 == string2Integer.myAtoi(str5);
         assert 0 == string2Integer.myAtoi(str6);
         assert 2147483647 == string2Integer.myAtoi(str7);
+        assert 0 == string2Integer.myAtoi(str8);
     }
 }
