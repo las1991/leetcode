@@ -15,4 +15,5 @@
 |6|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)|[Java](./src/zigZagConversion/ZigZagConversion.java)|Medium|
 |7|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[Java](./src/reverseInteger/ReverseInteger.java)|Easy|
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Java](./src/string2Integer/String2Integer.java)|Medium|
+|9|[palindrome number](https://leetcode-cn.com/problems/palindrome-number/)|[Java](./src/palindromeNumber/PalindromeNumber.java)|Easy|
 |10|[Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[Java](./src/regularExpressionMatching/RegularExpressionMatching.java)|Hard|
