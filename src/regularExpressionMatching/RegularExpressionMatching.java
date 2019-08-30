@@ -21,10 +21,29 @@ public class RegularExpressionMatching {
 
 
     public boolean isMatchDP(String text, String pattern) {
-
         if (pattern.isEmpty()) return text.isEmpty();
 
-        return false;
+        int[][] dp = new int[text.length() + 1][pattern.length() + 1];
+
+        return dp(dp, 0, 0, text, pattern);
+    }
+
+    private boolean dp(int[][] dp, int i, int j, String text, String pattern) {
+        boolean ans;
+        if (j == pattern.length()) return i == text.length();
+        if (dp[i][j] != 0) {
+            return dp[i][j] == 1;
+        }
+
+        boolean first_match = i < text.length() && (text.charAt(i) == pattern.charAt(j) || pattern.charAt(j) == '.');
+
+        if (j + 1 < pattern.length() && pattern.charAt(j + 1) == '*') {
+            ans = (first_match && dp(dp, i + 1, j, text, pattern)) || dp(dp, i, j + 2, text, pattern);
+        } else {
+            ans = first_match && dp(dp, i + 1, j + 1, text, pattern);
+        }
+        dp[i][j] = ans ? 1 : -1;
+        return ans;
     }
 
 }

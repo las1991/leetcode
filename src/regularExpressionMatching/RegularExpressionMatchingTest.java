@@ -28,5 +28,14 @@ public class RegularExpressionMatchingTest {
         assert false == matching.isMatch(entry5.getKey(), entry5.getValue());
     }
 
+    @Test
+    public void dp() {
+        assert false == matching.isMatchDP(entry1.getKey(), entry1.getValue());
+        assert true == matching.isMatchDP(entry2.getKey(), entry2.getValue());
+        assert true == matching.isMatchDP(entry3.getKey(), entry3.getValue());
+        assert true == matching.isMatchDP(entry4.getKey(), entry4.getValue());
+        assert false == matching.isMatchDP(entry5.getKey(), entry5.getValue());
+    }
+
 
 }
